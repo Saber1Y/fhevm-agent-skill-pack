@@ -1,0 +1,7 @@
+contracts/ConfidentialToken.sol
+test/ConfidentialToken.test.ts
+scripts/deploy.ts
+frontend/src/App.tsx
+frontend/src/DecryptButton.tsx
+hardhat.config.ts
+package.json
