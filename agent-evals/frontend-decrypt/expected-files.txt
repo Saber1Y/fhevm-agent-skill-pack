@@ -1,0 +1,8 @@
+contracts/ConfidentialVault.sol
+test/ConfidentialVault.test.ts
+frontend/src/FhevmProvider.tsx
+frontend/src/DecryptButton.tsx
+frontend/src/VaultApp.tsx
+frontend/src/App.tsx
+hardhat.config.ts
+package.json
