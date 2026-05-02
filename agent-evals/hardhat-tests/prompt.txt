@@ -1,0 +1,13 @@
+Write comprehensive Hardhat tests for an FHEVM confidential voting contract.
+
+Requirements:
+- Test fixture setup with fhevmjs instance creation
+- Encrypted vote submission tests
+- Double voting prevention test
+- Invalid candidate rejection test
+- Vote accumulation and decryption test
+- End voting functionality test
+- Encrypted handle return type test
+- Edge cases: zero votes, max votes
+- Tests must use userDecryptEuint for verification
+- Tests must run successfully with npm run test
