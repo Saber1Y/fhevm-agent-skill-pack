@@ -1,0 +1,7 @@
+contracts/ConfidentialVoting.sol
+test/ConfidentialVoting.test.ts
+scripts/deploy.ts
+frontend/src/App.tsx
+frontend/src/DecryptButton.tsx
+hardhat.config.ts
+package.json
