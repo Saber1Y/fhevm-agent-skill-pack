@@ -1,0 +1,12 @@
+Build a confidential voting dApp using FHEVM.
+
+Requirements:
+- Voting contract with encrypted votes (euint8)
+- Multiple candidates defined at deployment
+- One vote per address
+- Encrypted tally accumulation
+- End voting function
+- Hardhat tests with encrypted inputs
+- Frontend with decrypt button for results
+- Run fhevm:lint and fix any issues
+- All tests must pass
