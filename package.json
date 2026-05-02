@@ -1,6 +1,6 @@
 {
   "name": "fhevm-agent-skill",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "FHEVM Agent Engineer — Production skill pack for building confidential smart contracts with AI agents",
   "main": "bin/init.js",
   "bin": {
