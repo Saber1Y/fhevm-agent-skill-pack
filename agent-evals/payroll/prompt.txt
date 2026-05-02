@@ -1,0 +1,12 @@
+Build a confidential payroll dApp using FHEVM.
+
+Requirements:
+- Employer can set encrypted salaries for employees
+- Employees can claim their encrypted salary
+- Salaries are hidden from other employees
+- Per-pay-period tracking with encrypted amounts
+- Admin can add/remove employees
+- Hardhat tests with encrypted inputs and decryption checks
+- Frontend for employer to set salaries and employees to claim
+- Run fhevm:lint and fix any issues
+- All tests must pass
