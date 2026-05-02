@@ -1,0 +1,12 @@
+Build a confidential ERC-7984 token using FHEVM.
+
+Requirements:
+- Full ERC-7984 token with encrypted balances (euint256)
+- Confidential transfers with encrypted amounts
+- Confidential approvals and transferFrom
+- Owner-controlled minting with max supply
+- Minting can be closed by owner
+- Hardhat tests covering mint, transfer, approve, transferFrom
+- Frontend to check encrypted balance and decrypt
+- Run fhevm:lint and fix any issues
+- All tests must pass
