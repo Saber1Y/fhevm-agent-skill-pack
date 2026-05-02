@@ -1,0 +1,13 @@
+Build a frontend decryption demo for an FHEVM contract.
+
+Requirements:
+- Simple vault contract with encrypted deposits/withdrawals
+- React frontend with wallet connection
+- FhevmProvider context for FHE instance management
+- DecryptButton component with EIP-712 signing flow
+- Deposit form that encrypts input before sending
+- Balance display that requires user decryption
+- Error handling for failed decryption attempts
+- Hardhat tests for the vault contract
+- Run fhevm:lint and fix any issues
+- All tests must pass
