@@ -1,0 +1,41 @@
+{
+  "name": "@fhevm/agent-skill",
+  "version": "1.0.0",
+  "description": "FHEVM Agent Engineer — Production skill pack for building confidential smart contracts with AI agents",
+  "main": "bin/init.js",
+  "bin": {
+    "fhevm-skill-init": "./bin/init.js"
+  },
+  "scripts": {
+    "init": "node bin/init.js",
+    "fhevm:lint": "node scripts/fhevm-lint.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saber1Y/fhevm-agent-skill-pack.git"
+  },
+  "keywords": [
+    "fhevm",
+    "zama",
+    "fhe",
+    "confidential",
+    "smart-contracts",
+    "solidity",
+    "agent-skill",
+    "cursor",
+    "claude",
+    "encrypted"
+  ],
+  "author": "Saber1Y",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Saber1Y/fhevm-agent-skill-pack/issues"
+  },
+  "homepage": "https://github.com/Saber1Y/fhevm-agent-skill-pack#readme",
+  "files": [
+    "SKILL.md",
+    "references/",
+    "scripts/fhevm-lint.js",
+    "bin/init.js"
+  ]
+}
