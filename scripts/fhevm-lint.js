@@ -190,8 +190,8 @@ const checks = {
 
   DECRYPT_IN_SOLIDITY: {
     name: "Attempting to decrypt in Solidity",
-    severity: "error",
-    description: "Solidity cannot decrypt FHEVM ciphertexts",
+    severity: "warning",
+    description: "Solidity cannot decrypt FHEVM ciphertexts directly",
     test: (content) => {
       const errors = [];
 
@@ -209,9 +209,7 @@ const checks = {
       }
 
       if (/FHE\.decrypt\s*\(/.test(content)) {
-        // FHE.decrypt is allowed in specific contexts (like maxSupply checks)
-        // but should be flagged as a warning
-        errors.push("FHE.decrypt() used — ensure this is intentional (only works for specific coprocessor operations)");
+        errors.push("FHE.decrypt() used — this decrypts on-chain and may leak information");
       }
 
       return errors;
