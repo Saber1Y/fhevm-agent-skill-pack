@@ -20,6 +20,21 @@ contract MyContract is SepoliaConfig {
 
 The network config (e.g., `SepoliaConfig`, `LocalFHEVMConfig`) provides the FHE coprocessor address and gateway configuration.
 
+## FHE.allowTransient() — Temporary Access
+
+Grants one-time access for the current transaction only.
+
+```solidity
+function processWithAccess(externalEuint32 input, bytes calldata proof) external {
+    euint32 value = FHE.fromExternal(input, proof);
+    FHE.allowThis(value);
+    FHE.allowTransient(value, msg.sender);
+    // msg.sender can decrypt only during this transaction
+}
+```
+
+**When to use**: One-time operations where persistent access is not needed.
+
 ## Storing Encrypted State
 
 ```solidity
